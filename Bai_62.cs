@@ -11,7 +11,7 @@ class Program
         int b = int.Parse(Console.ReadLine());
 
         int ucln_141;
-        int x = a, y = b; // Biến có 3 số cuối mã sinh viên
+        int x = a, y = b;
 
         while (x != y)
         {
