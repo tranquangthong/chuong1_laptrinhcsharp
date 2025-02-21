@@ -4,11 +4,17 @@ class Program
 {
     static void Main()
     {
-        Console.Write("Nhap n: ");
+        try
+        {
+                    Console.Write("Nhap n: ");
         int n = int.Parse(Console.ReadLine());
 
         bool la_so_nguyen_to_141 = true; 
 
+        if (n < 1)
+        {
+            Console.WriteLine("Vui long nhap so nguyen duong!");
+        }
         if (n < 2)
         {
             la_so_nguyen_to_141 = false;
@@ -29,5 +35,11 @@ class Program
             Console.WriteLine($"{n} la so nguyen to");
         else
             Console.WriteLine($"{n} khong phai so nguyen to");
+        }
+        catch (Exception)
+        {
+            Console.WriteLine("Loi nhap lieu! Vui long nhap so nguyen hop le.");
+        }
     }
+
 }
